@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/iconos">
+        <file>iconos/353434-off-on-power-switch_107506.png</file>
+        <file>iconos/HVAC.jpg</file>
+        <file>iconos/power.png</file>
+        <file>iconos/ventilador.png</file>
+        <file>iconos/fan.png</file>
+        <file>iconos/descarga.png</file>
+        <file>iconos/remote_control_icon-icons.com_49852.png</file>
+        <file>iconos/remote_control_infrared_icon_179120.png</file>
+        <file>iconos/images.jpg</file>
+        <file>iconos/Button_Ok-01_25121.png</file>
+        <file>iconos/accept_check_checklist_circle_mark_ok_yes_icon_123225.png</file>
+        <file>iconos/fan_icon_137646.png</file>
+        <file>iconos/temperature-1_icon-icons.com_65085.png</file>
+        <file>iconos/advanced_level_skill_icon_216846.png</file>
+        <file>iconos/level_skill_icon_216954.png</file>
+    </qresource>
+</RCC>

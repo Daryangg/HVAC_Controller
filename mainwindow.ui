@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HVAC_Controller</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/iconos/iconos/remote_control_icon-icons.com_49852.png</normaloff>:/iconos/iconos/remote_control_icon-icons.com_49852.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#333;
+</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>80</width>
+    <height>80</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/iconos/iconos/images.jpg);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background: rgba(137, 186, 182,0.8);
+border-radius:40px;
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+         </property>
+         <property name="text">
+          <string>Marca :</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="pushButton">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255,0);
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="iconos.qrc">
+           <normaloff>:/iconos/iconos/accept_check_checklist_circle_mark_ok_yes_icon_123225.png</normaloff>:/iconos/iconos/accept_check_checklist_circle_mark_ok_yes_icon_123225.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">image: url(:/iconos/iconos/remote_control_icon-icons.com_49852.png);
+border-radius: 20px;
+background-color: rgb(255, 255, 255,0);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QComboBox" name="comboBox">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>LG</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Samsung</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Panasonic</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>TLC</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>523</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(60, 227, 201);</string>
+   </property>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <widget class="QMenu" name="menuContacto">
+     <property name="title">
+      <string>Contacto</string>
+     </property>
+     <addaction name="actionFacebook"/>
+     <addaction name="actionTwitter"/>
+     <addaction name="actionMail"/>
+    </widget>
+    <addaction name="menuContacto"/>
+   </widget>
+   <widget class="QMenu" name="menuAbaut">
+    <property name="title">
+     <string>Acerca del producto</string>
+    </property>
+    <addaction name="actionEntorno_de_desarrollo"/>
+    <addaction name="actionHVAC_Controller"/>
+   </widget>
+   <addaction name="menuAbaut"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(60, 227, 201);
+</string>
+   </property>
+  </widget>
+  <action name="actionHeat">
+   <property name="text">
+    <string>Heat</string>
+   </property>
+  </action>
+  <action name="actionCool">
+   <property name="text">
+    <string>Cool</string>
+   </property>
+  </action>
+  <action name="actionAuto">
+   <property name="text">
+    <string>Auto</string>
+   </property>
+  </action>
+  <action name="actionTurbo">
+   <property name="text">
+    <string>Turbo</string>
+   </property>
+  </action>
+  <action name="actionDry">
+   <property name="text">
+    <string>Dry</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Auto</string>
+   </property>
+  </action>
+  <action name="actionFacebook">
+   <property name="text">
+    <string>Facebook</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facebook&lt;a href=&quot;https://www.facebook.com/daryan.gongora.7&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Facebook&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionTwitter">
+   <property name="text">
+    <string>Twitter</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
+   </property>
+  </action>
+  <action name="actionEntorno_de_desarrollo">
+   <property name="text">
+    <string>Entorno de desarrollo</string>
+   </property>
+  </action>
+  <action name="actionHVAC_Controller">
+   <property name="text">
+    <string>HVAC_Controller</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
